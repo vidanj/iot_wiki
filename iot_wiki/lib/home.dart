@@ -21,14 +21,40 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Center(
 
-        child: Column(
-
-          mainAxisAlignment: MainAxisAlignment.center,
+        // child: ListView.builder(
+        //   itemCount: 12,
+        //   itemBuilder: (BuildContext context, int index){
+        //     return ListTile(
+        //       leading: Icon(Icons.abc),
+        //       title: Text('Protoboard'),
+        //     );
+        //   },
+        // )
+        child: ListView(
           children: <Widget>[
-            
+            ListTile(
+              title: Text('Primero'),
+              subtitle: Text('Este el primer Tile'),
+              leading: Icon(Icons.add),
+              onTap: (){},
+            ),
+            ListTile(
+              title: Text('Primero'),
+              subtitle: Text('Este el primer Tile'),
+              leading: Icon(Icons.add),
+              onTap: (){},
+            ),
+            ListTile(
+              title: Text('Primero'),
+              subtitle: Text('Este el primer Tile'),
+              leading: Icon(Icons.add),
+              onTap: (){},
+            ),
+
           ],
         ),
-      ),
+
+      )
     );
   }
 }
